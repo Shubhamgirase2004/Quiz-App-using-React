@@ -12,6 +12,9 @@ This project was created to deepen my understanding of React fundamentals such a
 
 ---
 
+<img width="1918" height="897" alt="image" src="https://github.com/user-attachments/assets/bc738659-df3a-4c3a-9793-b88db9d8b7c8" />
+
+
 ## Features
 
 - Single and multiple correct answer questions  
