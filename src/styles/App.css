@@ -1,0 +1,6 @@
+.app { min-height: 100vh; display: grid; grid-template-rows: auto 1fr; }
+.app-header { padding: 24px 20px 0; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 22px rgba(124,156,255,0.9); }
+.brand-title { margin: 0; font-size: clamp(22px, 3vw, 32px); letter-spacing: 0.2px; }
+.app-main { display: grid; place-items: center; padding: 24px; }

@@ -1,0 +1,11 @@
+.app-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124,156,255,0.25), transparent 60%),
+    radial-gradient(900px 500px at -10% 90%, rgba(255,107,107,0.18), transparent 60%),
+    linear-gradient(180deg, rgba(11,16,32,0.6), rgba(11,16,32,0.95)),
+    url("/src/assets/bg-quiz.jpg") center/cover no-repeat fixed;
+  z-index: -1;
+  filter: saturate(1.1);
+}

@@ -1,0 +1,34 @@
+:root {
+  --bg: #0b1020;
+  --card: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.14);
+  --text: #f5f7fb;
+  --muted: #b8c1d9;
+  --primary: #7c9cff;
+  --primary-600: #6888ff;
+  --success: #2ecc71;
+  --danger: #ff6b6b;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --shadow: 0 12px 40px rgba(0,0,0,0.35);
+  --transition: 180ms ease;
+}
+
+html, body, #root { height: 100%; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+
+button {
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  padding: 0.65em 1.1em;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #222637;
+  color: var(--text);
+  cursor: pointer;
+  transition: transform var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+button:hover { transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+button:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }

@@ -1,0 +1,26 @@
+.result-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  text-align: center;
+  width: 100%;
+  max-width: 720px;
+}
+
+.result-title { margin: 0 0 8px; }
+.score-badge {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  padding: 10px 16px; border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--card-border);
+  margin: 10px 0; font-weight: 800; font-size: 20px;
+}
+.score { color: var(--primary); font-size: 24px; }
+.sep, .total { color: var(--muted); }
+.result-message { color: var(--muted); margin: 8px 0 16px; }
+
+.result-actions .primary { background: var(--primary); color: #0b1020; border: none; }
+.result-actions .primary:hover { background: var(--primary-600); }

@@ -1,0 +1,32 @@
+.options { display: grid; gap: 12px; margin-top: 12px; }
+
+.option {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+.option:hover { border-color: var(--primary); background: rgba(124,156,255,0.08); transform: translateY(-1px); }
+.option.selected { border-color: var(--primary); background: rgba(124,156,255,0.12); }
+.option.locked { cursor: not-allowed; }
+
+.option.right { border-color: var(--success); background: rgba(46, 204, 113, 0.12); }
+.option.wrong { border-color: var(--danger); background: rgba(255, 107, 107, 0.14); }
+
+.index {
+  display: inline-grid; place-items: center;
+  width: 28px; height: 28px; border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  font-weight: 700; font-size: 0.9rem;
+}
+.label { line-height: 1.3; }
+.tick { color: var(--success); font-weight: 800; }
+.cross { color: var(--danger); font-weight: 800; }
